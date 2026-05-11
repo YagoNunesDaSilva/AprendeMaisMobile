@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AprendeMais">
         <activity
             android:name=".MainActivity"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/Theme.AprendeMais">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
