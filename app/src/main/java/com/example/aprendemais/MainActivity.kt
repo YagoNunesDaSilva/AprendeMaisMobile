@@ -1,6 +1,8 @@
 package com.example.aprendemais
 
+import android.content.Intent // Importação necessária para a Intent
 import android.os.Bundle
+import android.widget.Button // Importação necessária para o Botão
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val btnEntrar = findViewById<Button>(R.id.button)
+        btnEntrar.setOnClickListener {
+            val intent = Intent(this, TelaPrincipal::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }
