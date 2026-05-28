@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <!-- Identidade Aprende+ -->
+    <color name="bg_dark">#0F0F0F</color>
+    <color name="surface_dark">#1A1A1A</color>
+    <color name="orange_primary">#F14902</color>
+    <color name="orange_gradient_start">#F14902</color>
+    <color name="orange_gradient_end">#FF7A00</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#9E9E9E</color>
 </resources>
