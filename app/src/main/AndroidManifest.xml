@@ -11,21 +11,33 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AprendeMais">
+
+        <activity
+            android:name=".AtividadesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AprendeMais" />
+
+        <activity
+            android:name=".AulasActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AprendeMais" />
+
         <activity
             android:name=".CadastroActivity"
             android:exported="false"
             android:theme="@style/Theme.AprendeMais" />
+
         <activity
             android:name=".TelaPrincipal"
             android:exported="false"
             android:theme="@style/Theme.AprendeMais" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AprendeMais">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

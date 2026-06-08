@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_central"
+            android:icon="@drawable/outline_browse_24"
+            android:title="Central" />
+        <item
+            android:id="@+id/nav_aulas"
+            android:icon="@drawable/outline_book_24"
+            android:title="Aulas" />
+        <item
+            android:id="@+id/nav_atividades"
+            android:icon="@drawable/outline_book_ribbon_24"
+            android:title="Atividades" />
+        <item
+            android:id="@+id/nav_provas"
+            android:icon="@drawable/outline_assignment_24"
+            android:title="Provas" />
+        <item
+            android:id="@+id/nav_calendario"
+            android:icon="@drawable/outline_calendar_month_24"
+            android:title="Calendário" />
+        <item
+            android:id="@+id/nav_insights"
+            android:icon="@drawable/outline_insert_chart_24"
+            android:title="Insights" />
+    </group>
+
+    <item android:title="Sistema">
+        <menu>
+            <item
+                android:id="@+id/nav_config"
+                android:icon="@drawable/outline_build_24"
+                android:title="Configurações" />
+        </menu>
+    </item>
+</menu>
