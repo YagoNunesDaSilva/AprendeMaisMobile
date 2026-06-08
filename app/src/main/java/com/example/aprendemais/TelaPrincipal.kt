@@ -1,5 +1,6 @@
 package com.example.aprendemais
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +15,7 @@ class TelaPrincipal : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_tela_principal)
-
+        
         val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
         val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
         val navView = findViewById<NavigationView>(R.id.nav_view)
@@ -34,15 +35,23 @@ class TelaPrincipal : AppCompatActivity() {
         // Trata os cliques nos itens do menu
         navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
-                //R.id.nav_central -> { /* Navegar para Central */ }
-                R.id.nav_aulas -> { /* Navegar para Aulas */ }
-                // Adicione os outros casos conforme necessário
+                R.id.nav_central -> {
+                    // Já estamos na Central
+                }
+                R.id.nav_aulas -> {
+                    val intent = Intent(this, AulasActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.nav_atividades -> {
+                    val intent = Intent(this, AtividadesActivity::class.java)
+                    startActivity(intent)
+                }
+                // Adicione os outros casos (provas, calendario, etc) quando as activities forem criadas
             }
             drawerLayout.closeDrawer(GravityCompat.START)
             true
         }
     }
-
     // Fecha o menu ao clicar no botão 'Voltar' do sistema, se ele estiver aberto
     override fun onBackPressed() {
         val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
