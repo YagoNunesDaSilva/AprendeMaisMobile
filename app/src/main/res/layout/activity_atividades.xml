@@ -157,37 +157,35 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical">
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="PRAZO"
-                                        android:textColor="@color/text_secondary"
-                                        android:textSize="10sp" />
+
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="11/06/2026 09:39"
                                         android:textColor="@color/white"
                                         android:textSize="11sp" />
-                                </LinearLayout>
 
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="24dp"
-                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="PRAZO"
+                                        android:textColor="@color/text_secondary"
+                                        android:textSize="10sp" />
+
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="RESTANTE"
                                         android:textColor="@color/text_secondary"
                                         android:textSize="10sp" />
+
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="Expira em 2d 23h"
                                         android:textColor="@color/orange_primary"
                                         android:textSize="11sp" />
+
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -195,18 +193,29 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="24dp"
                                     android:orientation="vertical">
+
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="STATUS"
                                         android:textColor="@color/text_secondary"
                                         android:textSize="10sp" />
+
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="● Pendente"
                                         android:textColor="@color/orange_primary"
                                         android:textSize="11sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="24dp"
+                                    android:orientation="vertical">
+
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -298,12 +307,28 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical">
+
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="PRAZO"
                                         android:textColor="@color/text_secondary"
                                         android:textSize="10sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="RESTANTE"
+                                        android:textColor="@color/text_secondary"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Expira em 4d 23h"
+                                        android:textColor="@color/orange_primary"
+                                        android:textSize="11sp" />
+
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
@@ -317,18 +342,21 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="24dp"
                                     android:orientation="vertical">
+
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="RESTANTE"
+                                        android:text="STATUS"
                                         android:textColor="@color/text_secondary"
                                         android:textSize="10sp" />
+
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Expira em 4d 23h"
+                                        android:text="● Pendente"
                                         android:textColor="@color/orange_primary"
                                         android:textSize="11sp" />
+
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -336,19 +364,9 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="24dp"
                                     android:orientation="vertical">
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="STATUS"
-                                        android:textColor="@color/text_secondary"
-                                        android:textSize="10sp" />
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="● Pendente"
-                                        android:textColor="@color/orange_primary"
-                                        android:textSize="11sp" />
+
                                 </LinearLayout>
+
                             </LinearLayout>
 
                             <com.google.android.material.button.MaterialButton
